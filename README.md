@@ -22,6 +22,7 @@ echo19_qr/
 
 - Instagram : [@echo.xix](https://www.instagram.com/echo.xix/)
 - TikTok : [@echo.xix](https://www.tiktok.com/@echo.xix)
+- Twitter : [@echo_xix](https://www.x.com/@echo_xix)
 
 ## QR Code
 
