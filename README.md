@@ -27,4 +27,4 @@ echo19_qr/
 
 Un QR code a été généré pour rediriger vers cette page.
 
-![QR Code](echo19_qr-code.png)
+![QR Code](echoxix_qr-code.png)
