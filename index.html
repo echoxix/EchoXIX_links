@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Echo 19 – Liens</title>
+  <style>
+    :root{
+      --navy:#224463;   /* bleu Echo 19 */
+      --navy-2:#183a4e; /* hover + ombres */
+      --bg:#ffffff;     /* fond blanc (charte) */
+    }
+
+    /* RESET */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--navy);
+      font:500 16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+      display:flex; align-items:center; justify-content:center;
+      padding:24px;
+    }
+
+    /* Conteneur mobile-first */
+    .card{
+      width:100%;
+      max-width:420px;
+      text-align:center;
+      padding:28px 24px 32px;
+      border:1px solid rgba(15,42,58,.08);
+      border-radius:20px;
+      box-shadow:0 8px 30px rgba(15,42,58,.08);
+      animation:pop .5s ease-out both;
+    }
+
+    /* Logo centré */
+    .logo{
+      width:min(220px,60vw);
+      display:block;
+      margin:0 auto 18px;
+      opacity:0; transform:translateY(8px);
+      animation:fadeUp .7s .1s ease-out forwards;
+      /* si ton logo a un fond blanc, rien à faire.
+         s'il est sur fond transparent, parfait. */
+    }
+
+    .subtitle{
+      margin:0 0 18px;
+      font-size:14px;
+      letter-spacing:.02em;
+      color:rgba(15,42,58,.75);
+    }
+
+    /* Pile de liens */
+    .links{display:flex; flex-direction:column; gap:14px; margin-top:8px;}
+
+    .btn{
+      appearance:none; border:none; cursor:pointer;
+      display:flex; align-items:center; justify-content:center; gap:10px;
+      width:100%; padding:14px 18px;
+      background:#fff; color:var(--navy);
+      border:1.5px solid var(--navy);
+      border-radius:999px;
+      font-weight:700;
+      transition:transform .15s ease, background .15s ease, color .15s ease, box-shadow .15s ease;
+      box-shadow:0 4px 12px rgba(15,42,58,.08);
+      text-decoration:none;
+    }
+    .btn:hover{ background:var(--navy); color:#fff; transform:translateY(-1px); box-shadow:0 8px 20px rgba(24,58,78,.18);}
+    .btn:active{ transform:translateY(0); }
+
+    /* Icônes (SVG inline, couleur suit le texte) */
+    .icon{width:22px;height:22px; display:block}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pop{from{opacity:0;transform:scale(.98)}to{opacity:1;transform:scale(1)}}
+
+    /* Petit crédit optionnel */
+    .foot{margin-top:14px; font-size:12px; color:rgba(15,42,58,.55)}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <!-- ⚠️ remplace le src par le VRAI NOM de ton fichier -->
+    <img class="logo" src="echo19_logo.jpg" alt="Echo 19" />
+
+    <p class="subtitle">Suivez nos aventures et faites résonner les voix du 19e.</p>
+
+    <div class="links">
+      <a class="btn" href="https://www.instagram.com/echo_xix_/" target="_blank" rel="noopener">
+        <!-- Icône Instagram -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/>
+          <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="2"/>
+          <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
+        </svg>
+        Instagram
+      </a>
+
+      <a class="btn" href="https://www.tiktok.com/@echo.xix" target="_blank" rel="noopener">
+        <!-- Icône TikTok -->
+        <svg class="icon" viewBox="0 0 24 24" fill="none">
+          <path d="M14 4v8.2a3.8 3.8 0 1 1-3.8-3.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 7c1 .9 2.5 1.6 4 1.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        TikTok
+      </a>
+    </div>
+
+    <!-- <div class="foot">@echo.xix</div> -->
+  </main>
+</body>
+</html>
